@@ -1,0 +1,52 @@
+h1 {
+    background-color: #f5f5dc;
+    color: green;
+    padding: 15px;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0;
+    font-family: "Times New Roman";
+}
+
+/* Styles for formatting tags */
+b, strong {
+    font-weight: bold;
+}
+
+i, em {
+    font-style: italic;
+}
+
+small {
+    font-size: 0.8em;
+}
+
+mark {
+    background-color: yellow;
+    color: black;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 0.8em;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
+/* Additional styling for body (optional) */
+body {
+    line-height: 1.6;
+    font-family: Times New Roman;
+}

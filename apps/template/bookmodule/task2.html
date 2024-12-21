@@ -1,0 +1,70 @@
+{% extends "layouts/base.html" %} 
+{% load static %} 
+
+{% block title %} BookList Page {% endblock title %} 
+
+{% block stylesheets %}
+    <style>
+        h1 {
+            background-color: pink; 
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 0;
+            font-family: Times New Roman;
+        }
+
+        table {
+            width: 20%;
+            margin: 20px auto;
+            font-size: 1em;
+            font-family: Times New Roman;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: pink;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        caption {
+            font-size: 1.2em;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+{% endblock stylesheets %}
+
+{% block content %}
+<h1>Task 2</h1>  
+<h2>The books that have editions higher than two and either the title or author of the book contains the two adjacent letters ‘qu':</h2>
+<table>
+<tr>
+    <th> Title </th>
+    <th> Author </th>
+    <th> Edition </th>
+</tr>
+
+    {% for book in books %}
+<tr>
+    <td> {{book.title}} </td>
+    <td> {{book.author}} </td>
+    <td> {{book.edition}} </td>
+</tr>
+    {% endfor %}
+
+</table>
+<hr>
+{% endblock content %}

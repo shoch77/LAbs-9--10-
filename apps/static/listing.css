@@ -1,0 +1,40 @@
+/* Style for the main heading */
+h1 {
+    background-color: #4f878e; /* Teal background */
+    color: white; /* White text */
+    padding: 15px;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0;
+    font-family: Times New Roman;
+}
+
+/* Styles for lists */
+ul, ol {
+    margin-left: 30px;
+}
+
+/* Style for unordered list items */
+ul li {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+/* Style for ordered list items */
+ol li {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+/* Style for nested lists */
+ul ul, ul ol, ol ul, ol ol {
+    margin-left: 20px;
+    font-size: 0.9em; /* Slightly smaller font for nested lists */
+}
+
+/* Additional styling for body (optional) */
+body {
+    line-height: 1.6;
+    font-family: Times New Roman;
+}

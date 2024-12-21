@@ -1,0 +1,49 @@
+/* Container styles */
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Background colors for each section */
+.section1 {
+    background-color: #aaffaa; /* Light green */
+    padding: 20px;
+}
+
+.section2 {
+    background-color: #555555; /* Dark grey */
+    padding: 20px;
+}
+
+.section3 {
+    background-color: #000000; /* Black */
+    padding: 20px;
+}
+
+/* Link styles */
+a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Different link states */
+.section1 a {
+    color: red;
+}
+
+.section2 a {
+    color: orange;
+}
+
+.section3 a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}

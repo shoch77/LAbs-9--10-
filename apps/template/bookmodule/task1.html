@@ -1,0 +1,61 @@
+{% extends "layouts/base.html" %} 
+{% load static %} 
+
+{% block title %} BookList Page {% endblock title %} 
+
+{% block stylesheets %}
+    <style>
+        h1 {
+            background-color: pink; 
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 0;
+            font-family: Times New Roman;
+        }
+
+        table {
+            width: 20%;
+            margin: 20px auto;
+            font-size: 1em;
+            font-family: Times New Roman;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: pink;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        caption {
+            font-size: 1.2em;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+{% endblock stylesheets %}
+
+{% block content %}
+<h1>Task 1</h1>  
+<h2>The books that have a price less than or equal to 50 are:</h2>
+<ul>
+    {% for book in books %}
+        <li>{{ book.title }} - {{ book.price }}</li>  <!-- Replace "title" and "price" with your model fields -->
+    {% empty %}
+        <li>No books found under 50.</li>
+    {% endfor %}
+</ul>
+<hr>
+{% endblock content %}

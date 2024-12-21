@@ -1,0 +1,67 @@
+/* Style for Fruit Price Table */
+.fruit-table {
+    width: 20%;
+    margin: 20px auto;
+    font-size: 1em;
+    font-family: Times New Roman;
+    text-align: center;
+}
+
+.fruit-table, .fruit-table th, .fruit-table td {
+    border: 1px solid black;
+}
+
+.fruit-table th {
+    background-color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.fruit-table td {
+    padding: 8px;
+}
+
+.fruit-table caption {
+    font-size: 1.2em;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Style for Camel Comparison Table */
+.camel-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 1em;
+    font-family: Times New Roman;
+    text-align: center;
+}
+
+.camel-table, .camel-table th, .camel-table td {
+    border: 1px solid black;
+}
+
+.camel-table th {
+    background-color: #ffffff;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.camel-table td {
+    padding: 8px;
+}
+
+.camel-table caption {
+    font-size: 1.2em;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Style for the image within the camel table */
+.camel-table .table-image {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

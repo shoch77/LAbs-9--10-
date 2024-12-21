@@ -1,0 +1,12 @@
+<h1>List of Books</h1>
+<ul>
+    {% for book in books %}
+        <p>
+            Title: {{ book.title }} | Author: {{ book.author }} | Price: {{ book.price }}
+            <a href="{% url 'edit_book1' book.id %}">Edit</a> | 
+            <a href="{% url 'delete_book' book.id %}">Delete</a>
+        </p>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'add_book1' %}">Add New Book</a>

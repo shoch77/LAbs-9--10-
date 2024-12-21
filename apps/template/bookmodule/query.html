@@ -1,0 +1,42 @@
+{% extends "layouts/base2.html" %}
+
+{% load static %}
+
+{% block title%}Kadi query about books{% endblock title%}
+{% block stylesheets%}
+<style>
+
+  table, th, td {
+      border: 1px solid black;
+      text-color: yellow;
+      color: pink;
+      border-color: pink;
+      text-align: center;
+     }
+
+  table {
+    color = pink;
+  }
+
+  .button {
+   background-color: pink;
+  }
+
+  .button:hover{
+   background-color: blue;
+  }
+
+
+
+</style>
+{%endblock stylesheets%}
+
+{% block content%}
+
+<form>
+<lable> Name <lable>
+   <textarea name = "text" col= "20" row = "20"></textarea>
+   <button class = "button" type = "submit">Submit</button>
+   <hr>
+      
+{% endblock content%}
